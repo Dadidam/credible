@@ -3,8 +3,31 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+body p {
+  color: rgb(0, 0, 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
 nav ul {
   -webkit-padding-start: 0;
+}
+
+button.active {
+  background: rgb(102, 102, 102);
+}
+
+a, a:link, a:visited {
+  color: rgb(11, 97, 164);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* low resolution, 480px and below */
@@ -163,11 +186,15 @@ nav ul {
     }
       #header-menu {
         float: left;
+        height: 40px;
+        margin-top: -5px;
         width: 75%;
       }
       #user-info {
         float: right;
-        width: 25%;
+        margin-right: 15px;
+        text-align: right;
+        /* width: 25%; */
       }
   nav {
     background: rgb(204, 204, 204);

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from '@progress/kendo-react-buttons';
+import { Button, ButtonGroup } from '@progress/kendo-react-buttons';
 
 import './reset.css';
 import './App.css';
@@ -22,18 +22,31 @@ class App extends Component {
                 <h1>Partner Name</h1>
               </div>
               <div id="logout-button">
-                <Button look="outline">Logout</Button>
+                <Button look="outline">log out</Button>
               </div>
               <div id="help-button">
-                <i class="fas fa-question-circle fa-lg"></i>
+                <i className="fas fa-question-circle fa-lg" />
               </div>
               <div id="service-logo">
                 <img src="./img/logo.png" alt="" />
               </div>
             </div>
             <div id="header-bottom">
-              <div id="header-menu">Home | Client | Employee</div>
-              <div id="user-info">Logged in as: username 11:25 AM EST</div>
+              <div id="header-menu">
+                <ButtonGroup>
+                  <Button primary={true} className="active" aria-checked={true}>Home</Button>
+                  <Button look="outline">Client</Button>
+                  <Button look="outline">Employee</Button>
+                  <Button look="outline">Schedule</Button>
+                  <Button look="outline">Visit</Button>
+                  <Button look="outline">Admin</Button>
+                  <Button look="outline">Billing</Button>
+                  <Button look="outline">Reports</Button>
+                  <Button look="outline">Forms</Button>
+                  <Button look="outline">Inpatient</Button>
+                </ButtonGroup>
+              </div>
+              <div id="user-info"><p>Logged in as: <a href="#">username</a> 11:25 AM EST</p></div>
             </div>
           </div>
         </header>
