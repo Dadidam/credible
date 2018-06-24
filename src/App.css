@@ -1,28 +1,195 @@
-.App {
-  text-align: center;
+body {
+  background: rgb(255, 255, 255);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+nav ul {
+  -webkit-padding-start: 0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* low resolution, 480px and below */
+@media only screen and (max-width: 480px) {
+  #app-root {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(193, 180, 152);
+    margin: 0 auto;
+    width: 95%;
+  }
+  header {
+    background: rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(102, 102, 102);
+    border-top: 1px solid rgb(102, 102, 102);
+    height: 90px;
+  }
+  nav {
+    background: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    text-align: center;
+  }
+  nav li {
+    display: inline;
+    font-size: 120%;
+    line-height: 160%;
+    margin-left: 10px;
+  }
+  nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  article {
+    margin-bottom: 60px;
+    margin-left: 10px;
+    width: 95%;
+  }
 }
 
-.App-title {
-  font-size: 1.5em;
+/* medium resolution, 481px to 1023px */
+@media only screen and (min-width: 481px) {
+  #app-root {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(193, 180, 152);
+    margin: 0 auto;
+    width: 95%;
+  }
+  header {
+    background: rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(102, 102, 102);
+    border-top: 1px solid rgb(102, 102, 102);
+    height: 90px;
+  }
+  nav {
+    background: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    text-align: center;
+  }
+  nav li {
+    display: inline;
+    font-size: 110%;
+    line-height: 160%;
+    margin-left: 10px;
+  }
+  nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  article {
+    margin-bottom: 50px;
+    margin-left: 10px;
+    width: 95%;
+  }
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* high resolution, 1024px and higher */
+@media only screen and (min-width: 1024px) {
+  h1 {
+    color: rgb(0, 0, 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+  }
+  #app-root {
+    background: rgb(255, 255, 255);
+    /* border: 1px solid rgb(193, 180, 152); */
+    margin: 0 auto;
+    width: 960px;
+  }
+  header {
+    background: rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(102, 102, 102);
+    border-top: 1px solid rgb(102, 102, 102);
+    height: 90px;
+  }
+    #partner-logo {
+      float: left;
+      height: 90px;
+      margin: 0 10px;
+      position: relative;
+      width: 10%;
+    }
+    #partner-logo img {
+      border: 1px solid rgb(204, 204, 204);
+      bottom: 0;
+      height: auto;
+      left: 0;
+      margin: auto;
+      max-height: 80px;
+      max-width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: auto;
+    }
+    #header-content {
+      height: 90px;
+      float: left;
+      width: 88%;
+    }
+    #header-top {
+      height: 50px;
+    }
+      #partner-name {
+        float: left;
+        /* width: 70%; */
+      }
+      #partner-name h1 {
+        padding-top: 10px;
+      }
+      #service-logo {
+        float: right;
+        height: 100%;
+        margin: 10px 15px 0 0;
+        /* width: 10%; */
+        width: 100px;
+      }
+      #service-logo img {
+        width: 100%;
+      }
+      #help-button {
+        float: right;
+        /* width: 10%; */
+        margin: 15px 70px 0 0;
+        width: 50px;
+      }
+      #logout-button {
+        float: right;
+        /* width: 10%; */
+        margin: 10px 15px 0 0;
+        /* width: 85px; */
+      }
+    #header-bottom {
+      height: 40px;
+    }
+      #header-menu {
+        float: left;
+        width: 75%;
+      }
+      #user-info {
+        float: right;
+        width: 25%;
+      }
+  nav {
+    background: rgb(204, 204, 204);
+    float: left;
+    /* height: 35px; */
+    margin-bottom: 20px;
+    padding: 10px 0;
+    text-align: center;
+    width: 150px;
+  }
+  nav li {
+    display: block;
+    font-size: 105%;
+    margin-left: 10px;
+  }
+  nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  article {
+    width: 940px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
 }
