@@ -10,10 +10,6 @@ body p {
   font-weight: normal;
 }
 
-nav ul {
-  -webkit-padding-start: 0;
-}
-
 button.active {
   background: rgb(102, 102, 102);
 }
@@ -32,7 +28,7 @@ a:hover {
 
 /* low resolution, 480px and below */
 @media only screen and (max-width: 480px) {
-  #app-root {
+  /* #app-root {
     background: rgb(255, 255, 255);
     border: 1px solid rgb(193, 180, 152);
     margin: 0 auto;
@@ -64,12 +60,12 @@ a:hover {
     margin-bottom: 60px;
     margin-left: 10px;
     width: 95%;
-  }
+  } */
 }
 
 /* medium resolution, 481px to 1023px */
 @media only screen and (min-width: 481px) {
-  #app-root {
+  /* #app-root {
     background: rgb(255, 255, 255);
     border: 1px solid rgb(193, 180, 152);
     margin: 0 auto;
@@ -101,7 +97,7 @@ a:hover {
     margin-bottom: 50px;
     margin-left: 10px;
     width: 95%;
-  }
+  } */
 }
 
 /* high resolution, 1024px and higher */
@@ -191,20 +187,39 @@ a:hover {
         text-align: right;
       }
   nav {
-    background: rgb(204, 204, 204);
+    /* background: rgb(204, 204, 204); */
     float: left;
-    margin-bottom: 20px;
-    padding: 10px 0;
-    text-align: center;
+    /* margin-bottom: 20px; */
+    /* padding: 10px 0; */
+    /* text-align: center; */
     width: 150px;
   }
-  nav li {
+  nav ul {
+    border: 1px solid rgb(102, 102, 102);
+    list-style-type: none;
+    margin-left: 30px;
+    padding: 0;
+  }
+  nav ul li {
+    border-bottom: 1px solid rgb(102, 102, 102);
     display: block;
-    font-size: 105%;
-    margin-left: 10px;
+    /* float: right; */
+    padding: 8px 0;
+    /* height: 30px;
+    width: 120px; */
+  }
+  nav i {
+    color: rgb(11, 97, 164);
+    margin: 0 5px;
+  }
+  nav ul li:first-child {
+    border-top: none;
+  }
+  nav ul li:last-child {
+    border-bottom: none;
   }
   nav li a {
-    color: rgb(255, 255, 255);
+    color: rgb(11, 97, 164);
     text-decoration: none;
   }
   article {

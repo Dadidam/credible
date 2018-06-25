@@ -3,7 +3,6 @@ import { Button, ButtonGroup } from '@progress/kendo-react-buttons';
 
 import './reset.css';
 import './App.css';
-// import '@progress/kendo-theme-bootstrap/dist/all.css';
 import '@progress/kendo-theme-default/dist/all.css';
 
 class App extends Component {
@@ -12,8 +11,6 @@ class App extends Component {
       <div className="app-root">
         <header>
           <div id="partner-logo">
-            {/* <img src="./img/partner-logo.png" /> */}
-            {/* <img src="./img/credible.png" /> */}
             <img src="./img/sample-partner.jpg" alt="" />
           </div>
           <div id="header-content">
@@ -34,7 +31,9 @@ class App extends Component {
             <div id="header-bottom">
               <div id="header-menu">
                 <ButtonGroup>
-                  <Button primary={true} className="active" aria-checked={true}>Home</Button>
+                  <Button primary={true} className="active" aria-checked={true}>
+                    Home
+                  </Button>
                   <Button look="outline">Client</Button>
                   <Button look="outline">Employee</Button>
                   <Button look="outline">Schedule</Button>
@@ -46,21 +45,52 @@ class App extends Component {
                   <Button look="outline">Inpatient</Button>
                 </ButtonGroup>
               </div>
-              <div id="user-info"><p>Logged in as: <a href="#">username</a> 11:25 AM EST</p></div>
+              <div id="user-info">
+                <p>
+                  Logged in as: <a href="">username</a> 11:25 AM EST
+                </p>
+              </div>
             </div>
           </div>
         </header>
         <nav>
           <ul>
-            <li>Overview</li>
-            <li>1st Available</li>
-            <li>Amendments</li>
-            <li>Tx Plus</li>
-            <li>Attachments</li>
-            <li>Allergy</li>
-            <li>Visit List</li>
-            <li>Add Visit</li>
-            <li>Authorization</li>
+            <li>
+              <i className="fas fa-eye" />
+              <a href="">Overview</a>
+            </li>
+            <li>
+              <i className="fas fa-money-bill-alt" />
+              <a href="">1st Available</a>
+            </li>
+            <li>
+              <i className="fas fa-book" />
+              <a href="">Amendments</a>
+            </li>
+            <li>
+              <i className="fas fa-plus-square" />
+              <a href="">Tx Plus</a>
+            </li>
+            <li>
+              <i className="fas fa-paperclip" />
+              <a href="">Attachments</a>
+            </li>
+            <li>
+              <i className="fas fa-pills" />
+              <a href="">Allergy</a>
+            </li>
+            <li>
+              <i className="fas fa-clipboard-list" />
+              <a href="">Visit List</a>
+            </li>
+            <li>
+              <i className="fas fa-location-arrow" />
+              <a href="">Add Visit</a>
+            </li>
+            <li>
+              <i className="fas fa-sign-in-alt" />
+              <a href="">Authorization</a>
+            </li>
           </ul>
         </nav>
         <article>Content</article>
