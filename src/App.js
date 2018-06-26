@@ -131,6 +131,12 @@ class App extends Component {
               </Grid>
             </div>
           </div>
+          <div id="content-action">
+            <Button>Cancel</Button>
+            <Button>Save Draft</Button>
+            <Button>Send to front desk</Button>
+            <Button primary={true}>Print</Button>
+          </div>
         </article>
       </div>
     );

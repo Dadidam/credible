@@ -16,8 +16,9 @@ class DiagnosisProblem extends GridCell {
               className="k-checkbox"
               checked={Selected}
               disabled={Disabled}
+              onChange={() => {}}
             />
-            <label className="k-checkbox-label" for="ch1">
+            <label className="k-checkbox-label" htmlFor="ch1">
               ({Code} {Title})
             </label>
           </div>

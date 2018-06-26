@@ -275,4 +275,7 @@ a:hover {
     #content-header button {
       float: right;
     }
+    #content-action button {
+      margin-right: 15px;
+    }
 }
