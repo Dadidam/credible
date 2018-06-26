@@ -1,25 +1,24 @@
 import React from 'react';
 import { GridCell } from '@progress/kendo-react-grid';
 
-class DiagnosisProblem extends GridCell {
+class VisitType extends GridCell {
   render() {
     const item = this.props.dataItem;
     const field = this.props.field;
-    const { Code, Disabled, Selected, Title } = item[field];
+    const { Approved, ID, Title } = item[field];
     return (
       <td>
         <form className="app-form">
           <div className="k-form-field">
             <input
+              id={ID}
               type="checkbox"
-              id={item.ItemID}
-              className="k-checkbox"
-              checked={Selected}
-              disabled={Disabled}
+              checked={Approved}
               onChange={() => {}}
+              className="k-checkbox"
             />
-            <label className="k-checkbox-label" htmlFor={item.ItemID}>
-              ({Code} {Title})
+            <label className="k-checkbox-label" htmlFor={ID}>
+              {Title}
             </label>
           </div>
         </form>
@@ -28,4 +27,4 @@ class DiagnosisProblem extends GridCell {
   }
 }
 
-export default DiagnosisProblem;
+export default VisitType;

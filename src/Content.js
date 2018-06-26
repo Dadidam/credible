@@ -3,7 +3,7 @@ import PageTitle from './PageTitle';
 import PageHeader from './PageHeader';
 import PageActions from './PageActions';
 import Diagnosis from './Grids/Diagnosis';
-import { Button } from '@progress/kendo-react-buttons';
+import Visits from './Grids/Visits';
 
 export default () => {
   return (
@@ -11,6 +11,7 @@ export default () => {
       <PageTitle />
       <PageHeader />
       <Diagnosis />
+      <Visits />
       <PageActions />
     </article>
   );

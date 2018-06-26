@@ -1,0 +1,45 @@
+[
+  {
+    "Visit": {
+      "Title": "Annual Health Exam",
+      "Approved": true,
+      "ID": 432
+    },
+    "VisitDate": "9/7/17",
+    "VisitTime": "11:00 AM",
+    "Employee": "Monica Hall"
+  },
+  {
+    "Visit": {
+      "Title": "EKG",
+      "Approved": true,
+      "ID": 443
+    },
+    "VisitDate": "9/7/17",
+    "VisitTime": "11:00 AM",
+    "Employee": "Monica Hall",
+    "Checked": true
+  },
+  {
+    "Visit": {
+      "Title": "Sutures",
+      "Approved": true,
+      "ID": 553
+    },
+    "VisitDate": "3/4/17",
+    "VisitTime": "3:30 PM",
+    "Employee": "Tracy Scott",
+    "Checked": true
+  },
+  {
+    "Visit": {
+      "Title": "Renal Denervation",
+      "Approved": false,
+      "ID": 127
+    },
+    "VisitDate": "3/4/17",
+    "VisitTime": "4:00 PM",
+    "Employee": "Tracy Scott",
+    "Checked": false
+  }
+]
