@@ -1,6 +1,7 @@
 body {
   background: rgb(255, 255, 255);
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
 }
 
 body p {
@@ -24,6 +25,23 @@ a, a:link, a:visited {
 
 a:hover {
   text-decoration: none;
+}
+
+.app-form {
+  padding: 0;
+}
+
+.table-link {
+  color: rgb(11, 97, 164);
+  text-decoration: underline;
+}
+
+.success {
+  color: rgb(0, 175, 100);
+}
+
+.error {
+  color: rgb(187, 0, 0);
 }
 
 /* low resolution, 480px and below */
@@ -102,11 +120,30 @@ a:hover {
 
 /* high resolution, 1024px and higher */
 @media only screen and (min-width: 1024px) {
-  h1 {
+  h1, h2, h3, h4 {
     color: rgb(0, 0, 0);
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 28px;
     font-weight: normal;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .label-container {
+    float: left;
+    width: 120px;
+  }
+  .grid-container {
+    margin-bottom: 30px;
   }
   #app-root {
     background: rgb(255, 255, 255);
@@ -192,6 +229,7 @@ a:hover {
     /* margin-bottom: 20px; */
     /* padding: 10px 0; */
     /* text-align: center; */
+    margin-right: 10px;
     width: 150px;
   }
   nav ul {
@@ -223,8 +261,18 @@ a:hover {
     text-decoration: none;
   }
   article {
-    width: 940px;
-    margin-bottom: 50px;
-    margin-left: 10px;
+    /* float: left; */
+    margin: 20px 10px 0 150px;
   }
+    #content-header {
+      height: 30px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    #content-header h3 {
+      float: left;
+    }
+    #content-header button {
+      float: right;
+    }
 }

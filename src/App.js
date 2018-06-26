@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import DiagnosisProblem from './GridCells/DiagnosisProblem';
+import PatientEducation from './GridCells/PatientEducation';
 import { Button, ButtonGroup } from '@progress/kendo-react-buttons';
+import { Grid, GridColumn as Column } from '@progress/kendo-react-grid';
 
 import './reset.css';
 import './App.css';
 import '@progress/kendo-theme-default/dist/all.css';
+
+import diagnosis from './data/diagnosis.json';
 
 class App extends Component {
   render() {
@@ -93,7 +98,40 @@ class App extends Component {
             </li>
           </ul>
         </nav>
-        <article>Content</article>
+        <article>
+          <div>
+            <h2>
+              CLIENT MEDICAL PROFILE: Taylor Swift (4242424242) DOB: 12/13/1989
+              (27 / F)
+            </h2>
+          </div>
+          <div id="content-header">
+            <h3>Discharge Summary</h3>
+            <Button>Unload all Patient Education</Button>
+          </div>
+          <div className="grid-container">
+            <div className="label-container">
+              <span className="label">Diagnosis</span>
+            </div>
+            <div className="grid">
+              <Grid data={diagnosis} scrollable="none">
+                <Column
+                  field="Problem"
+                  title="Problem List"
+                  cell={DiagnosisProblem}
+                />
+                <Column field="OnsetDate" title="Onset Date" />
+                <Column field="Notes" title="Notes" />
+                <Column field="DiagnosedBy" title="Diagnosed By" />
+                <Column
+                  field="Education"
+                  title="Patient Education"
+                  cell={PatientEducation}
+                />
+              </Grid>
+            </div>
+          </div>
+        </article>
       </div>
     );
   }
