@@ -1,56 +1,60 @@
 body {
   background: rgb(255, 255, 255);
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-}
-
-body p {
   color: rgb(0, 0, 0);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(0, 0, 0);
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
-
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 18px;
+}
 button.active {
   background: rgb(102, 102, 102);
 }
-
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
   color: rgb(11, 97, 164);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   text-decoration: underline;
 }
-
 a:hover {
   text-decoration: none;
 }
-
 .app-form {
   padding: 0;
 }
-
 .table-link {
   color: rgb(11, 97, 164);
   text-decoration: underline;
 }
-
 .success {
   color: rgb(0, 175, 100);
 }
-
 .error {
   color: rgb(187, 0, 0);
 }
 
 /* low resolution, 480px and below */
 @media only screen and (max-width: 480px) {
-  /* #app-root {
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(193, 180, 152);
+  #app-root {
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
   }
   header {
     background: rgb(238, 238, 238);
@@ -58,81 +62,114 @@ a:hover {
     border-top: 1px solid rgb(102, 102, 102);
     height: 90px;
   }
-  nav {
-    background: rgb(0, 0, 0);
+  #partner-logo {
+    float: left;
+    height: 90px;
+    position: relative;
+    width: 15%;
+  }
+  #partner-logo img {
+    border: 1px solid rgb(204, 204, 204);
+    bottom: 0;
+    height: auto;
+    left: 0;
+    margin: auto;
+    max-height: 80px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+  }
+  #header-content {
+    height: 90px;
+    float: left;
+    width: 85%;
+  }
+  #header-top {
+    height: 50px;
+  }
+  #partner-name {
+    float: left;
+    padding-left: 10px;
+  }
+  #partner-name h1 {
+    padding-top: 10px;
+  }
+  #service-logo {
+    float: right;
+    height: 100%;
+    margin: 10px 15px 0 0;
+    width: 100px;
+  }
+  #service-logo img {
+    width: 100%;
+  }
+  #help-button {
+    float: right;
+    margin: 15px 70px 0 0;
+    width: 50px;
+  }
+  #logout-button {
+    float: right;
+    margin: 10px 15px 0 0;
+  }
+  #header-bottom {
+    height: 40px;
+  }
+  #header-menu {
+    display: none;
+  }
+  #header-nav {
+    height: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  #user-info {
+    float: right;
+    height: 40px;
+    margin: 10px 15px 0 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+  }
+  #header-nav {
+    border-bottom: 1px solid rgb(102, 102, 102);
     margin-bottom: 10px;
-    padding: 10px 5px;
+    padding: 10px 0;
     text-align: center;
   }
-  nav li {
+  #header-nav ul li {
     display: inline;
     font-size: 120%;
     line-height: 160%;
     margin-left: 10px;
   }
-  nav li a {
-    color: rgb(255, 255, 255);
+  #header-nav li a {
+    color: rgb(11, 97, 164);
     text-decoration: none;
   }
-  article {
-    margin-bottom: 60px;
-    margin-left: 10px;
-    width: 95%;
-  } */
-}
-
-/* medium resolution, 481px to 1023px */
-@media only screen and (min-width: 481px) {
-  /* #app-root {
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(193, 180, 152);
-    margin: 0 auto;
-    width: 95%;
-  }
-  header {
-    background: rgb(238, 238, 238);
-    border-bottom: 1px solid rgb(102, 102, 102);
-    border-top: 1px solid rgb(102, 102, 102);
-    height: 90px;
-  }
-  nav {
-    background: rgb(0, 0, 0);
-    margin-bottom: 20px;
-    padding: 10px 5px;
-    text-align: center;
-  }
-  nav li {
-    display: inline;
-    font-size: 110%;
-    line-height: 160%;
-    margin-left: 10px;
-  }
-  nav li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+  #header-nav li a.active {
+    color: rgb(187, 0, 0);
+    text-decoration: underline;
   }
   article {
-    margin-bottom: 50px;
-    margin-left: 10px;
-    width: 95%;
-  } */
-}
-
-/* high resolution, 1024px and higher */
-@media only screen and (min-width: 1024px) {
-  h1, h2, h3, h4 {
-    color: rgb(0, 0, 0);
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: normal;
+    margin: 20px 10px 0 10px;
   }
-  h1 {
-    font-size: 28px;
+  #content-header {
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
   }
-  h2 {
-    font-size: 24px;
+  #content-header h3 {
+    float: left;
   }
-  h3 {
-    font-size: 18px;
+  #content-header button {
+    float: right;
+  }
+  #content-action button {
+    margin-right: 15px;
   }
   .label {
     font-size: 14px;
@@ -145,10 +182,39 @@ a:hover {
   .grid-container {
     margin-bottom: 30px;
   }
+  #sidebar-nav {
+    display: none;
+  }
+  #content-action {
+    margin-bottom: 25px;
+  }
+  footer {
+    background: rgb(238, 238, 238);
+    border-top: 1px solid rgb(204, 204, 204);
+    display: block;
+    height: 25px;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+  }
+  footer li {
+    display: inline;
+    line-height: 160%;
+    margin: 5px auto;
+  }
+  footer li a {
+    padding: 4px 10px 4px 5px;
+  }
+  footer i {
+    color: rgb(11, 97, 164);
+  }
+}
+
+/* medium resolution, 481px to 1023px */
+@media only screen and (min-width: 481px) {
   #app-root {
-    background: rgb(255, 255, 255);
     margin: 0 auto;
-    width: 960px;
+    width: 100%;
   }
   header {
     background: rgb(238, 238, 238);
@@ -156,79 +222,236 @@ a:hover {
     border-top: 1px solid rgb(102, 102, 102);
     height: 90px;
   }
-    #partner-logo {
-      float: left;
-      height: 90px;
-      position: relative;
-      width: 10%;
-    }
-    #partner-logo img {
-      border: 1px solid rgb(204, 204, 204);
-      bottom: 0;
-      height: auto;
-      left: 0;
-      margin: auto;
-      max-height: 80px;
-      max-width: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: auto;
-    }
-    #header-content {
-      height: 90px;
-      float: left;
-      width: 90%;
-    }
-    #header-top {
-      height: 50px;
-    }
-      #partner-name {
-        float: left;
-      }
-      #partner-name h1 {
-        padding-top: 10px;
-      }
-      #service-logo {
-        float: right;
-        height: 100%;
-        margin: 10px 15px 0 0;
-        width: 100px;
-      }
-      #service-logo img {
-        width: 100%;
-      }
-      #help-button {
-        float: right;
-        margin: 15px 70px 0 0;
-        width: 50px;
-      }
-      #logout-button {
-        float: right;
-        margin: 10px 15px 0 0;
-      }
-    #header-bottom {
-      height: 40px;
-    }
-      #header-menu {
-        height: 40px;
-        position: absolute;
-        width: 75%;
-      }
-      #user-info {
-        float: right;
-        height: 40px;
-        margin: 10px 15px 0 0;
-        position: absolute;
-        right: 0;
-        text-align: right;
-      }
-  nav {
-    /* background: rgb(204, 204, 204); */
+  #partner-logo {
     float: left;
-    /* margin-bottom: 20px; */
-    /* padding: 10px 0; */
-    /* text-align: center; */
+    height: 90px;
+    position: relative;
+    width: 15%;
+  }
+  #partner-logo img {
+    border: 1px solid rgb(204, 204, 204);
+    bottom: 0;
+    height: auto;
+    left: 0;
+    margin: auto;
+    max-height: 80px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+  }
+  #header-content {
+    height: 90px;
+    float: left;
+    width: 85%;
+  }
+  #header-top {
+    height: 50px;
+  }
+  #partner-name {
+    float: left;
+    padding-left: 10px;
+  }
+  #partner-name h1 {
+    padding-top: 10px;
+  }
+  #service-logo {
+    float: right;
+    height: 100%;
+    margin: 10px 15px 0 0;
+    width: 100px;
+  }
+  #service-logo img {
+    width: 100%;
+  }
+  #help-button {
+    float: right;
+    margin: 15px 70px 0 0;
+    width: 50px;
+  }
+  #logout-button {
+    float: right;
+    margin: 10px 15px 0 0;
+  }
+  #header-bottom {
+    height: 40px;
+  }
+  #header-menu {
+    display: none;
+  }
+  #header-nav {
+    height: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  #user-info {
+    float: right;
+    height: 40px;
+    margin: 10px 15px 0 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+  }
+  #header-nav {
+    border-bottom: 1px solid rgb(102, 102, 102);
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  #header-nav ul li {
+    display: inline;
+    font-size: 120%;
+    line-height: 160%;
+    margin-left: 10px;
+  }
+  #header-nav li a {
+    color: rgb(11, 97, 164);
+    text-decoration: none;
+  }
+  #header-nav li a.active {
+    color: rgb(187, 0, 0);
+    text-decoration: underline;
+  }
+  article {
+    margin: 20px 10px 0 10px;
+  }
+  #content-header {
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  #content-header h3 {
+    float: left;
+  }
+  #content-header button {
+    float: right;
+  }
+  #content-action button {
+    margin-right: 15px;
+  }
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .label-container {
+    float: left;
+    width: 120px;
+  }
+  .grid-container {
+    margin-bottom: 30px;
+  }
+  #sidebar-nav {
+    display: none;
+  }
+  #content-action {
+    margin-bottom: 25px;
+  }
+  footer {
+    background: rgb(238, 238, 238);
+    border-top: 1px solid rgb(204, 204, 204);
+    display: block;
+    height: 25px;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+  }
+  footer li {
+    display: inline;
+    line-height: 160%;
+    margin: 5px auto;
+  }
+  footer li a {
+    padding: 4px 10px 4px 5px;
+  }
+  footer i {
+    color: rgb(11, 97, 164);
+  }
+}
+
+/* high resolution, 1024px and higher */
+@media only screen and (min-width: 1024px) {
+  #app-root {
+    margin: 0 auto;
+    width: 100%;
+  }
+  header {
+    background: rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(102, 102, 102);
+    border-top: 1px solid rgb(102, 102, 102);
+    height: 90px;
+  }
+  #partner-logo {
+    float: left;
+    height: 90px;
+    position: relative;
+    width: 10%;
+  }
+  #partner-logo img {
+    border: 1px solid rgb(204, 204, 204);
+    bottom: 0;
+    height: auto;
+    left: 0;
+    margin: auto;
+    max-height: 80px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+  }
+  #header-content {
+    height: 90px;
+    float: left;
+    width: 90%;
+  }
+  #header-top {
+    height: 50px;
+  }
+  #partner-name {
+    float: left;
+  }
+  #partner-name h1 {
+    padding-top: 10px;
+  }
+  #service-logo {
+    float: right;
+    height: 100%;
+    margin: 10px 15px 0 0;
+    width: 100px;
+  }
+  #service-logo img {
+    width: 100%;
+  }
+  #help-button {
+    float: right;
+    margin: 15px 70px 0 0;
+    width: 50px;
+  }
+  #logout-button {
+    float: right;
+    margin: 10px 15px 0 0;
+  }
+  #header-bottom {
+    height: 40px;
+  }
+  #header-menu {
+    display: block;
+    height: 40px;
+    position: absolute;
+    width: 75%;
+  }
+  #user-info {
+    float: right;
+    height: 40px;
+    margin: 10px 15px 0 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+  }
+  nav {
+    float: left;
     margin-right: 10px;
     width: 150px;
   }
@@ -241,10 +464,7 @@ a:hover {
   nav ul li {
     border-bottom: 1px solid rgb(102, 102, 102);
     display: block;
-    /* float: right; */
     padding: 8px 0;
-    /* height: 30px;
-    width: 120px; */
   }
   nav i {
     color: rgb(11, 97, 164);
@@ -261,21 +481,43 @@ a:hover {
     text-decoration: none;
   }
   article {
-    /* float: left; */
     margin: 20px 10px 0 150px;
   }
-    #content-header {
-      height: 30px;
-      margin-top: 30px;
-      margin-bottom: 15px;
-    }
-    #content-header h3 {
-      float: left;
-    }
-    #content-header button {
-      float: right;
-    }
-    #content-action button {
-      margin-right: 15px;
-    }
+  #content-header {
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  #content-header h3 {
+    float: left;
+  }
+  #content-header button {
+    float: right;
+  }
+  #content-action button {
+    margin-right: 15px;
+  }
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .label-container {
+    float: left;
+    width: 120px;
+  }
+  .grid-container {
+    margin-bottom: 30px;
+  }
+  #header-nav {
+    display: none;
+  }
+  #sidebar-nav {
+    display: block;
+  }
+  #content-action {
+    margin-bottom: 25px;
+  }
+  footer {
+    display: none;
+  }
 }

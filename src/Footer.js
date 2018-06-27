@@ -2,7 +2,7 @@ import React from 'react';
 
 export default () => {
   return (
-    <nav>
+    <footer>
       <ul>
         <li>
           <i className="fas fa-eye" />
@@ -41,6 +41,6 @@ export default () => {
           <a href="">Authorization</a>
         </li>
       </ul>
-    </nav>
+    </footer>
   );
 };
